@@ -14,8 +14,8 @@ services:
     volumes:
       # So that Traefik can listen to the Docker events
       - /var/run/docker.sock:/var/run/docker.sock
-  whoami:
+  user-api:
     # A container that exposes an API to show its IP address
-    image: bigrocs/traefik:user-api
+    image: user-api
     labels:
       - "traefik.http.routers.userapi.rule=Host(`userapi.docker.localhost`)"
