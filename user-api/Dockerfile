@@ -12,4 +12,4 @@ RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 COPY --from=builder /go/src/github.com/bigrocs/traefik/user-api/bin/userApi /usr/local/bin/
 ENTRYPOINT ["userApi"]
-EXPOSE 8080
+EXPOSE 1080
