@@ -1,8 +1,8 @@
 package router
 
 import (
+	h "github.com/bigrocs/traefik/user-api/handler"
 	"github.com/gin-gonic/gin"
-	h "github.com/bigrocs/traefik/user-api/hanlder"
 )
 
 // Handler
